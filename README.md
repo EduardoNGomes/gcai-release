@@ -35,7 +35,4 @@ The first time you run GCAI, it will create a configuration file at `~/.config/g
 
 You can also use the `-config` flag to re-configure your API key.
 
-## Flags
-
-- `--config`: A boolean flag that, when present, allows you to set or update your Gemini API key.
 
