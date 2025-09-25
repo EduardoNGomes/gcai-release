@@ -1,25 +1,44 @@
-
 # GCAI - AI Commit Message Generator
 
 GCAI is a command-line tool that uses AI to automatically generate commit messages for your git repositories.
 
 ## Installation
 
-To install GCAI, you can clone this repository and build the project using Go:
+Download the appropriate pre-built binary for your operating system from the [Releases](https://github.com/eduardongomes/gcai-release/releases) page, or clone this repository and run the corresponding installation script.
+
+### Linux
 
 ```bash
-git clone https://github.com/eduardongomes/gcai-release.git
-
-cd gcai-release
-
 ./install.sh
 ```
 
-Alternatively, you can download the pre-built binary from the [Releases](https://github.com/eduardongomes/gcai-release/releases) page.
-cd gcai
+This will install the `gcai` binary to `/usr/local/bin`.
+
+### macOS
+
+For Apple Silicon (ARM) Macs:
+
+```bash
+./install-mac-arm.sh
 ```
 
-This will create a `gcai` binary in the current directory. You can move this binary to a directory in your `PATH` to make it accessible from anywhere on your system.
+For Intel (x86_64) Macs:
+
+```bash
+./install-mac.sh
+```
+
+This will install the `gcai` binary to `/usr/local/bin`.
+
+### Windows
+
+Open a PowerShell terminal and run:
+
+```powershell
+.\install.ps1
+```
+
+This will install `gcai.exe` to `$env:USERPROFILE\bin` and add it to your `PATH`. You may need to restart your terminal for the `PATH` changes to take effect.
 
 ## Usage
 
@@ -34,5 +53,3 @@ gcai
 The first time you run GCAI, it will create a configuration file at `~/.config/gcai/config.json`. You will need to add your Gemini API key to this file.
 
 You can also use the `-config` flag to re-configure your API key.
-
-
