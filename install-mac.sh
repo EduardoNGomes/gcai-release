@@ -2,7 +2,7 @@
 BIN=gcai-macos
 INSTALL_PATH=/usr/local/bin/gcai
 
-echo "Instalando $BIN em $INSTALL_PATH..."
+echo "Instaling $BIN on $INSTALL_PATH..."
 sudo cp "$BIN" "$INSTALL_PATH"
 sudo chmod 755 "$INSTALL_PATH"
-echo "✅ gcai instalado com sucesso (binário macOS)!"
+echo "✅ gcai installed successfully!"
